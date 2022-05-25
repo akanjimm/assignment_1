@@ -1,0 +1,136 @@
+/* Global */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root {
+    --primary-color: #047aed;
+    --secondary-color: #1c3fa8;
+    --dark-color: #002240;
+    --light-color: #f4f4f4;
+    --success-color: #5cb85c;
+    --error-color: #d9534f;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+  }
+  
+a {
+    text-decoration: none;
+    color: #333;
+}
+  
+h1,
+h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+  
+p {
+    margin: 10px 0;
+}
+  
+img {
+    width: 100%;
+}
+
+
+/* Navbar */
+.navbar {
+    background-color: #047aed;
+    color: #fff;
+    height: 88px;
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,0.09);
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    color: #fff;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    border-bottom: solid 2px #fff;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+
+/* Head - About Me */
+.about-head .image-div,
+.about-sub-head .image-div {
+    width: 250px;
+    justify-self: flex-end;
+
+}
+
+
+/* About - Subhead */
+.about-sub-head a {
+    color: var(--primary-color);
+    margin: 10px;
+}
+
+.about-sub-head a:hover {
+    color: #333;
+}
+
+/* About - Body */
+.about-body .card {
+    height: 250px;
+}
+
+.about-body2 {
+    margin-top: 0px;
+}
+
+.about-body2 .card {
+    margin-top: 0px;
+}
+
+/* Footer */
+
+
+
+
+/* CALCULATOR PAGE */
+table, th, td {
+    border: 1px solid black;
+}
+
+table {
+    margin: 20px;
+}
+
+td, th {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+th {
+    text-align: end;
+    padding-right: 10px;
+}
+
+
+
+

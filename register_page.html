@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utilities.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">Mohammed.</h1>
+            <nav>
+                <ul>
+                    <li><a href="about_me.html">About Me</a></li>
+                    <li><a href="contact_page.html">Contact Me</a></li>
+                    <li><a href="register_page.html">Register</a></li>
+                    <li><a href="login_page.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <section>
+        <h2>Register Page</h2>
+        <form action="">
+            <div>
+                <label for="first-name" id="first-name-label">First Name</label>
+                <input id="first-name" type="text" name="first-name" placeholder="Enter your first name" required>
+            </div>
+            <div>
+                <label for="last-name" id="last-name-label">Last Name</label>
+                <input id="last-name" type="text" name="last-name" placeholder="Enter your last name" required>
+            </div>
+            <div>
+                <label for="phone" id="phone-label">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="0801 234 5678" pattern="[0-9]{4} [0-9]{3} [0-9]{4}">
+            </div>
+            <div>
+                <label for="gender-dropdown" id="gender-dropdown-label">Gender</label>
+                <select id="gender-dropdown" name="gender-dropdown">
+                    <option value="Select your gender" selected disabled>Select your gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div>
+                <label for="country" id="country-label">Country</label>
+                <input id="country" type="text" name="country" placeholder="Enter your country name" required>
+            </div>
+            <div>
+                <label for="state" id="state-label">State/Province</label>
+                <input id="state" type="text" name="state" placeholder="Enter your state or province" required>
+            </div>
+            <div>
+                <label for="username" id="username-label">Username</label>
+                <input id="username" type="text" name="username" placeholder="Enter your username" required>
+            </div>
+            <div>
+                <label for="password" id="password-label">Password</label>
+                <input id="password" type="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div>
+                <label for="confirm-password" id="confirm-password-label">Confirm Password</label>
+                <input id="confirm-password" type="password" name="confirm-password" placeholder="Confirm your password" required>
+            </div>
+            <div>
+                <input id="submit" type="submit" value="Submit">
+            </div>
+        </form>
+    </section>
+</body>
+</html>

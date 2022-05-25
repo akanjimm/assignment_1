@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utilities.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">Mohammed.</h1>
+            <nav>
+                <ul>
+                    <li><a href="about_me.html">About Me</a></li>
+                    <li><a href="contact_page.html">Contact Me</a></li>
+                    <li><a href="register_page.html">Register</a></li>
+                    <li><a href="login_page.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <section>
+        <h2>Contact Form</h2>
+        <form action="">
+            <div>
+                <label for="name" id="name-label">Name</label>
+                <input id="name" type="text" name="name" placeholder="Enter your name" required>
+            </div>
+            <div>
+                <label for="email" id="email-label">Email</label>
+                <input id="email" type="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" cols="" placeholder="Enter your message here..."></textarea>
+            </div>
+            <div>
+                <label for="dropdown" id="dropdown-label">Priority</label>
+                <select id="dropdown" name="contact-priority">
+                    <option value="Select current priority level" selected disabled>Select priority</option>
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+            </div>
+            <div>
+                <input id="submit" type="submit" value="Submit">
+            </div>
+        </form>
+    </section>
+</body>
+</html>
