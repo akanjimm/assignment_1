@@ -7,8 +7,42 @@
     <title>Contact</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/utilities.css">
+    <style>
+        .contact-form {
+            height: 610px;
+            width: 350px;
+            padding: 40px;
+            border: 1px solid var(--primary-color);
+            margin: 100px auto;
+        }
+        
+        .contact-form .form-control {
+            margin: 15px 0;
+        }
+        
+        .contact-form input[type='text'],
+        .contact-form input[type='email'],
+        .contact-form select,
+        .contact-form textarea {
+            border: 0;
+            border-bottom: 1px solid #b4becb;
+            width: 100%;
+            padding: 3px;
+            font-size: 16px
+        }
+        
+        .contact-form input:focus,
+        .contact-form select:focus {
+          outline: none;
+        }
+        
+        .contact-form .btn {
+            margin-top: 20px;
+        }
+            </style>
 </head>
 <body>
+    <!-- Navbar -->
     <div class="navbar">
         <div class="container flex">
             <h1 class="logo">Mohammed.</h1>
@@ -22,24 +56,26 @@
             </nav>
         </div>
     </div>
+
+    <!-- Contact -->
     <section>
-        <h2>Contact Form</h2>
-        <form action="">
+        <form action="" class="contact-form">
+            <h2>Contact</h2>
             <div>
                 <label for="name" id="name-label">Name</label>
-                <input id="name" type="text" name="name" placeholder="Enter your name" required>
+                <input id="name" class="form-control" type="text" name="name" placeholder="Enter your name" required>
             </div>
             <div>
                 <label for="email" id="email-label">Email</label>
-                <input id="email" type="email" name="email" placeholder="Enter your email" required>
+                <input id="email" class="form-control" type="email" name="email" placeholder="Enter your email" required>
             </div>
             <div>
                 <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" cols="" placeholder="Enter your message here..."></textarea>
+                <textarea id="message" class="form-control" name="message" rows="5" cols="" placeholder="Enter your message here..."></textarea>
             </div>
             <div>
                 <label for="dropdown" id="dropdown-label">Priority</label>
-                <select id="dropdown" name="contact-priority">
+                <select id="dropdown" class="form-control" name="contact-priority">
                     <option value="Select current priority level" selected disabled>Select priority</option>
                     <option value="High">High</option>
                     <option value="Medium">Medium</option>
@@ -47,9 +83,29 @@
                 </select>
             </div>
             <div>
-                <input id="submit" type="submit" value="Submit">
+                <input id="submit" class="btn btn-primary" type="submit" value="Submit">
             </div>
         </form>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark py-5">
+        <div class="container grid">
+            <div>
+                <h1>Mohammed.
+                </h1>
+                <p>Copyright &copy; 2022</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">About Me</a></li>
+                    <li><a href="contact_page.html">Contact Me</a></li>
+                    <li><a href="register_page.html">Register</a></li>
+                    <li><a href="login_page.html">Login</a></li>
+                    <li><a href="calculator_page.html" style="color: red">Calculator</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
 </body>
 </html>
